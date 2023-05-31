@@ -2,9 +2,8 @@
 
 Automation project with Java + Gradle using Browser Stack as a Device Farm and Github Action (CI) to automate the Flight Around App, GithubPages to deploy Allure Serve to see test result/report, PageObject/Screen and PageFactory as a structure.
 
-[![Appium Execution](https://github.com/tassioplima/badge.svg)](https://github.com/tassioplima/cocus/actions)
-[![Allure Report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)](https://tassioplima.github.io/automation-ci/)
-![Mutant AppTest](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Ftassioplima%2Fautomation-ci%2Fmain)
+[![Appium Execution](https://github.com/tassioplima/badge.svg)](https://github.com/tassioplima/FlightRound/actions)
+[![Allure Report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)](https://tassioplima.github.io/FlightRound/)
 
 Configuration:
 
@@ -54,6 +53,5 @@ To build a report, and browse it use the following command:
 ```
 ./gradlew allureServe
 ```
-
 
 Github Pages with Allure report results: [ALLURE](https://tassioplima.github.io/FlightAround/)
