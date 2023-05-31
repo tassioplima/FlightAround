@@ -14,7 +14,7 @@ public class Hooks extends AppiumController{
 
     @AfterEach
     public void tearDown(TestInfo info) throws Exception {
-      Print.takeScreenShot(info);
+      //Print.takeScreenShot(info);
       stopAppium();
     }
 
