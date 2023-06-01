@@ -1,16 +1,16 @@
 import appium.Hooks;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import screens.PageNote;
+import org.openqa.selenium.By;
 
 public class AppTest extends Hooks{
 
-    public PageNote pageNote;
-
     @Test
     @DisplayName("First Flight")
-    public void newNote() {
+    public void newFlight() throws InterruptedException {
+      //  Thread.sleep(1000);
+
+        driver.findElement(By.id("formContainer"));
 
     }
 

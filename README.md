@@ -10,7 +10,7 @@ Configuration:
 - Java JDK 8 or 11
 - Android SDK updated
 - Android Emulator or physical device
-- Appium Server
+- Appium Server installed 
 - Browser Stack Account and Keys
 
 Running:
@@ -32,15 +32,15 @@ iOS:
 ```
 ./gradlew test --tests "AppTest" -DMOBILE=iOS
 ```
-For use local user name by json or remote you can use Exec true or false:
+We have two possibilities for execution the local one and the remote, using the property boolean false or true you can setup on cli command
 
-true = execution using environment variable from secret key
+true = execution using  remote.json and runs on Browser Stack using some secrets keys on github repository
 
 ```
 ./gradlew test --tests "AppTest" -DMOBILE=ANDROID -DEXEC=true
 ```
 
-false = execution using json name and key from browser stack
+false = execution using loca..json  properties locally
 
 ```
 ./gradlew test --tests "AppTest" -DMOBILE=ANDROID -DEXEC=false

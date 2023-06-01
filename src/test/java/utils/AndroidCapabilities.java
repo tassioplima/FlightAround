@@ -26,9 +26,6 @@ public class AndroidCapabilities {
         caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, Utils.pathCapabilitieLocal().getAppPackage());
         caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, Utils.pathCapabilitieLocal().getAppActivity());
         caps.setCapability(MobileCapabilityType.UDID,Utils.pathCapabilitieLocal().getUdid() );
-        caps.setCapability("app", Utils.pathCapabilitieLocal().getAppLocal()[0]);
-        caps.setCapability("browserstack.video", true);
-        caps.setCapability("browserstack.debug", true);
         return caps;
     }
 }

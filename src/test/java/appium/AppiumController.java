@@ -1,21 +1,22 @@
 package appium;
 
+import java.net.URL;
+
 import io.appium.java_client.AppiumDriver;
+
 import io.appium.java_client.MobileElement;
 import utils.AndroidCapabilities;
 import utils.Env;
 import utils.iOSCapabilities;
 
-import java.net.URL;
-
 public class AppiumController {
 
     public static final String server = "https://" + Env.AUTOMATE_USERNAME.getEnv() + ":" + Env.AUTOMATE_ACCESS_KEY.getEnv() + "@hub-cloud.browserstack.com/wd/hub";
-    public static final String local = "http://127.0.0.1:4723/wd/hub";
+    public static final String local = "http://127.0.0.1:4723/";
 
-    public static AppiumDriver driver;
+    public static AppiumDriver<MobileElement>  driver;
 
-    public void startAppium() throws Exception {
+    public static AppiumDriver<MobileElement>  startAppium() throws Exception {
 
         if (Env.MOBILE.getEnv().equalsIgnoreCase("android")){
             if (Env.BOOLENV.getBool()){
@@ -31,7 +32,11 @@ public class AppiumController {
                 driver = new AppiumDriver<MobileElement>(new URL(local), iOSCapabilities.getIOSCapabilitiesLocal());
             }
         }
+        return driver;
+    }
 
+    public static AppiumDriver getDriver() {
+        return driver;
     }
 
     public void stopAppium() throws Exception {
