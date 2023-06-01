@@ -7,7 +7,7 @@ Automation project with Java + Gradle using Browser Stack as a Device Farm and G
 
 Configuration:
 
-- Java JDK 8 or 11
+- Java JDK 1.8
 - Android SDK updated
 - Android Emulator or physical device
 - Appium Server installed 
