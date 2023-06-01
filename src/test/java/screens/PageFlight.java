@@ -5,6 +5,7 @@ import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebElement;
 import utils.Commons;
 
@@ -42,19 +43,53 @@ public class PageFlight extends PageBase{
 
     @AndroidFindBy(id = "childrenEditText")
     @iOSXCUITFindBy(accessibility = "N/A")
-    private WebElement childNumber;
+    private MobileElement childNumber;
 
     @AndroidFindBy(id = "searchButton")
     @iOSXCUITFindBy(accessibility = "N/A")
-    private WebElement search;
+    private MobileElement search;
 
-    public void selectOriginStation(){
+    @AndroidFindBy(id = "android:id/button1")
+    @iOSXCUITFindBy(accessibility = "N/A")
+    private MobileElement confirmCalendar;
+
+    @AndroidFindBy(id = "android:id/button1")
+    @iOSXCUITFindBy(accessibility = "N/A")
+    private MobileElement cancelCalendar;
+
+    @AndroidFindBy(id = "snackbar_text")
+    @iOSXCUITFindBy(accessibility = "N/A")
+    private MobileElement wrongSearch;
+
+    public void selectOrigin(String airport){
         Commons.waitForVisibilityElement(loadingInitialScreen);
-        this.originStation.click();
-    }
-
-    public void sendInformation(String airport){
-        Commons.waitForVisibilityElement(originStation);
         this.originStation.sendKeys(airport);
     }
+
+    public void selectDestination(String airport){
+        Commons.waitForVisibilityElement(destinationStation);
+        this.destinationStation.sendKeys(airport);
+    }
+
+    public void selectCalendar(){
+        Commons.waitForVisibilityElement(departure);
+        this.departure.click();
+        Commons.waitForVisibilityElement(confirmCalendar);
+        this.confirmCalendar.click();
+    }
+    public void selectAdult(String adult){
+        this.adultNumber.sendKeys(adult);
+    }
+
+    public void searchFlight(){
+        Commons.hideKeyboard();
+        this.search.click();
+    }
+
+    public String wrongSearch(){
+        Commons.waitForVisibilityElement(wrongSearch);
+        String viewText = this.wrongSearch.getText();
+        return  viewText;
+    }
+
 }
