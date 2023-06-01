@@ -54,6 +54,7 @@ public class PageFlight extends PageBase{
     }
 
     public void sendInformation(String airport){
+        Commons.waitForVisibilityElement(originStation);
         this.originStation.sendKeys(airport);
     }
 }
