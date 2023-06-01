@@ -34,6 +34,7 @@ iOS:
 ```
 We have two possibilities for execution the local one and the remote, using the property boolean false or true you can setup on cli command
 
+
 true = execution using  remote.json and runs on Browser Stack using some secrets keys on github repository
 
 ```
