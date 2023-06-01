@@ -10,7 +10,7 @@ import utils.Env;
 import utils.iOSCapabilities;
 
 public class AppiumController {
-    public static final String server = "https://" + Env.AUTOMATE_USERNAME.getEnv() + ":" + Env.AUTOMATE_ACCESS_KEY.getEnv() + "@hub-cloud.browserstack.com/wd/hub";
+    public static final String server = "https://" + Env.AUTOMATE_USERNAME.getEnv() + ":" + Env.AUTOMATE_ACCESS_KEY.getEnv() + "@hub-cloud.browserstack.com/";
     public static final String local = "http://127.0.0.1:4723/";
 
     public static AppiumDriver<MobileElement>  driver;
