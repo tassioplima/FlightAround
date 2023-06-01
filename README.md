@@ -30,20 +30,20 @@ Android:
 iOS:
 
 ```
-./gradlew test --tests "AppTest" -DMOBILE=iOS
+./gradlew test --tests "AppTest" -DMOBILE=ios
 ```
 We have two possibilities for execution the local one and the remote, using the property boolean false or true you can setup on cli command
 
 true = execution using  remote.json and runs on Browser Stack using some secrets keys on github repository
 
 ```
-./gradlew test --tests "AppTest" -DMOBILE=ANDROID -DEXEC=true
+./gradlew test --tests "AppTest" -DMOBILE=android -DEXEC=true
 ```
 
-false = execution using loca..json  properties locally
+false = execution using local.json  properties locally
 
 ```
-./gradlew test --tests "AppTest" -DMOBILE=ANDROID -DEXEC=false
+./gradlew test --tests "AppTest" -DMOBILE=android -DEXEC=false
 ```
 
 ### Building Allure report
