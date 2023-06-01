@@ -1,6 +1,6 @@
 {
   "appPackage": "com.example.flyingaround",
   "appActivity": "com.example.flyingaround.search.view.SearchActivity",
-  "udid": "3a9c7958",
+  "udid": "",
   "appLocal": ["",""]
 }
