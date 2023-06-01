@@ -1,19 +1,19 @@
 package screens;
 
-import appium.AppiumController;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import utils.Commons;
 
-public class PageFlight{
+public class PageFlight extends PageBase{
 
-    public PageFlight(AppiumDriver driver){
-        PageFactory.initElements(new AppiumFieldDecorator(AppiumController.getDriver()),this);
+    private MobileDriver<MobileElement> driver;
+
+    public PageFlight(AppiumDriver<MobileElement> driver){
+        super(driver);
     }
 
     @AndroidFindBy(id = "formContainer")
