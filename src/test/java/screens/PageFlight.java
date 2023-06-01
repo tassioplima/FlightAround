@@ -50,6 +50,10 @@ public class PageFlight extends PageBase{
 
     public void selectOriginStation(){
         Commons.waitForVisibilityElement(loadingInitialScreen);
-        this.originStation.sendKeys("London");
+        this.originStation.click();
+    }
+
+    public void sendInformation(String airport){
+        this.originStation.sendKeys(airport);
     }
 }

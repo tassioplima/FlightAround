@@ -12,7 +12,7 @@ public class AppTest extends Hooks{
     public void newFlight() {
         pageFlight = new PageFlight(driver);
         pageFlight.selectOriginStation();
-
+        pageFlight.sendInformation("London");
     }
 
 }
