@@ -2,7 +2,7 @@
   "name": "",
   "key": "",
   "device": ["Google Pixel 7 Pro", "iPhone 11 Pro"],
-  "os_version": ["9.0", "13"],
+  "os_version": ["13.0", "13"],
   "apps" : ["bs://8e6cd38ea57162e7d3786a9a3cf4778179e4c52d" , ",bs://"],
   "environments": [{
     "device": "Google Pixel 7 Pro",
