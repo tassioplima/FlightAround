@@ -2,6 +2,8 @@ package appium;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.TestInfo;
+import utils.Print;
 
 public class Hooks extends AppiumController{
 
@@ -11,7 +13,8 @@ public class Hooks extends AppiumController{
     }
 
     @AfterEach
-    public void tearDown() throws Exception {
+    public void tearDown(TestInfo info) throws Exception {
+        Print.takeScreenShot(info);
         stopAppium();
     }
 
