@@ -9,8 +9,7 @@ public class AppTest extends Hooks{
     public PageFlight pageFlight;
     @Test
     @DisplayName("First Flight")
-    public void newFlight() throws InterruptedException {
-      //  Thread.sleep(1000);
+    public void newFlight() {
         pageFlight = new PageFlight(driver);
         pageFlight.selectOriginStation();
 
