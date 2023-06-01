@@ -18,9 +18,6 @@ public class AndroidCapabilities {
         caps.setCapability("app", Utils.pathCapabilitie().getApps()[0]);
         caps.setCapability("browserstack.video", true);
         caps.setCapability("browserstack.debug", true);
-        HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
-        browserstackOptions.put("appiumVersion", "2.0.0");
-        caps.setCapability("bstack:options", browserstackOptions);
         return caps;
     }
 
