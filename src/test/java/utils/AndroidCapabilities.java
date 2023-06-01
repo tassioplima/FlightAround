@@ -4,6 +4,8 @@ import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.util.HashMap;
+
 public class AndroidCapabilities {
 
     public static DesiredCapabilities getAndroidCapabilities(){
@@ -16,7 +18,9 @@ public class AndroidCapabilities {
         caps.setCapability("app", Utils.pathCapabilitie().getApps()[0]);
         caps.setCapability("browserstack.video", true);
         caps.setCapability("browserstack.debug", true);
-        caps.setCapability("browserstack.local", true);
+        HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
+        browserstackOptions.put("appiumVersion", "2.0.0");
+        caps.setCapability("bstack:options", browserstackOptions);
         return caps;
     }
 
