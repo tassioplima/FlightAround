@@ -5,8 +5,6 @@ import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.WebElement;
 import utils.Commons;
 
 public class PageFlight extends PageBase{
@@ -79,6 +77,14 @@ public class PageFlight extends PageBase{
     }
     public void selectAdult(String adult){
         this.adultNumber.sendKeys(adult);
+    }
+
+    public void selectTeen(String teen){
+        this.teenNumber.sendKeys(teen);
+    }
+
+    public void selectChild(String child){
+        this.childNumber.sendKeys(child);
     }
 
     public void searchFlight(){
