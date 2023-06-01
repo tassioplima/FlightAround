@@ -16,6 +16,7 @@ public class AndroidCapabilities {
         caps.setCapability("app", Utils.pathCapabilitie().getApps()[0]);
         caps.setCapability("browserstack.video", true);
         caps.setCapability("browserstack.debug", true);
+        caps.setCapability("browserstack.local", true);
         return caps;
     }
 
