@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jun 01 14:36:07 GMT 2023","Thu Jun 01 14:36:57 GMT 2023","50050","","AppTest","","AppTest","newFlight","First Flight to Thessaloniki",""
