@@ -1,17 +1,18 @@
 import appium.Hooks;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import screens.PageNote;
+import org.openqa.selenium.By;
+import screens.PageFlight;
 
 public class AppTest extends Hooks{
 
-    public PageNote pageNote;
-
+    public PageFlight pageFlight;
     @Test
     @DisplayName("First Flight")
-    public void newNote() {
-
+    public void newFlight() {
+        pageFlight = new PageFlight(driver);
+        pageFlight.selectOriginStation();
+        pageFlight.sendInformation("London");
     }
 
 }

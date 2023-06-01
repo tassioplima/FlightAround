@@ -24,9 +24,6 @@ public class iOSCapabilities {
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME,"iOS");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
         caps.setCapability(MobileCapabilityType.UDID,Utils.pathCapabilitieLocal().getUdid() );
-        caps.setCapability("app", Utils.pathCapabilitieLocal().getAppLocal()[1]);
-        caps.setCapability("browserstack.video", true);
-        caps.setCapability("browserstack.debug", true);
         return caps;
     }
 }
