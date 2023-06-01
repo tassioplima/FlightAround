@@ -2,7 +2,7 @@
 
 Automation project with Java + Gradle using Browser Stack as a Device Farm and Github Action (CI) to automate the Flight Around App, GithubPages to deploy Allure Serve to see test result/report, PageObject/Screen and PageFactory as a structure.
 
-[![Appium Execution](https://github.com/tassioplima/badge.svg)](https://github.com/tassioplima/FlightRound/actions)
+[![Appium Execution](https://github.com/tassioplima/FlighAround/actions/workflows/browserstack.yml/badge.svg)](https://github.com/tassioplima/FlightAround/actions)
 [![Allure Report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)](https://tassioplima.github.io/FlightRound/)
 
 Configuration:
