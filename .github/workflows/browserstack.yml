@@ -38,5 +38,5 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew test --tests "AppTest" -DMOBILE=Android -DEXEC=true --stacktrace
+        run: ./gradlew test --tests "AppTest" -DMOBILE=android -DEXEC=true --stacktrace
 
