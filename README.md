@@ -57,3 +57,5 @@ To build a report, and browse it use the following command:
 
 
 Github Pages with Allure report results: [ALLURE](https://tassioplima.github.io/FlightAround/)
+
+![img.png](img.png)
