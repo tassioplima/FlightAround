@@ -1,0 +1,1 @@
+[{"uid":"bce71598be0c0ff6","name":"Validate second flight to London","time":{"start":1687343513919,"stop":1687343557068,"duration":43149},"status":"passed","severity":"normal"},{"uid":"18d51796235fc5d7","name":"Validate first flight to Thessaloniki","time":{"start":1687343469699,"stop":1687343513825,"duration":44126},"status":"passed","severity":"normal"}]
